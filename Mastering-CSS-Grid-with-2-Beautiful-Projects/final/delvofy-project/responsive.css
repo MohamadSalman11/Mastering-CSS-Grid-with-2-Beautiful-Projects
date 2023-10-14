@@ -1,0 +1,124 @@
+/* 1330px */
+
+@media (max-width: 1330px) {
+  body {
+    padding: 0;
+  }
+
+  .main-ctn {
+    width: 100%;
+  }
+}
+
+/* 950px */
+
+@media (max-width: 950px) {
+  .main-ctn {
+    grid-template-rows: 60px 55px 985px;
+  }
+
+  .sidebar {
+    grid-template-columns: repeat(4, 1fr);
+    grid-column: 1 / -1;
+    padding: 0;
+    justify-items: center;
+  }
+
+  .sidebar span img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .sidebar span {
+    column-gap: 12px;
+    padding-left: 0;
+  }
+
+  .gallery {
+    grid-column: 1 / -1;
+    grid-row: 3 / -1;
+    grid-template-rows: 50px 760px 200px;
+  }
+
+  .logo {
+    width: 130px;
+    height: 42px;
+  }
+
+  .input {
+    width: 90%;
+    padding: 8px 24px;
+    font-size: 14px;
+    margin-left: 25px;
+  }
+
+  .search-btn {
+    width: 120px;
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .search-btn img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .bookmark-icon,
+  .bell-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .profile-item span::after {
+    width: 15px;
+    height: 15px;
+    font-size: 10px;
+    right: -6px;
+    top: -8px;
+  }
+
+  .my-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .gallery-header h1 {
+    font-size: 16px;
+  }
+
+  .gallery-footer button {
+    font-size: 18px;
+    padding: 15px 32px;
+  }
+
+  .gallery-footer h1 {
+    font-size: 15px;
+  }
+}
+
+/* 730px */
+
+@media (max-width: 730px) {
+  .input-ctn {
+    display: none;
+  }
+
+  .sidebar span img {
+    width: 15px;
+    height: 15px;
+  }
+
+  .sidebar span {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 8px;
+  }
+
+  .sidebar span p {
+    font-size: 10px;
+  }
+
+  .main-ctn {
+    grid-template-rows: 60px 60px 985px;
+  }
+}
